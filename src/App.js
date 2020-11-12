@@ -8,7 +8,7 @@ export default function App() {
     const fetchedTodolist = await response.json();
     console.log(fetchedTodolist);
   }
-  
+  testFetch()
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
