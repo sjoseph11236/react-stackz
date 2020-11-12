@@ -5,7 +5,7 @@ export default function App() {
 
   const testFetch = async() => {
     const response =  await fetch("http://localhost:8000/api/todolist/get/all")
-    const fetchedTodolist = response.json();
+    const fetchedTodolist = await response.json();
     console.log(fetchedTodolist);
   }
   
