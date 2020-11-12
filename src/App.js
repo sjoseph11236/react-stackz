@@ -5,7 +5,10 @@ export default function App() {
 
   const testFetch = async() => {
     const response =  await fetch("http://localhost:8000/api/todolist/get/all")
+    const fetchedTodolist = response.json();
+    console.log(fetchedTodolist);
   }
+  
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
